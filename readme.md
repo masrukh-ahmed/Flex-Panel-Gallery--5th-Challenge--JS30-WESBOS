@@ -7,7 +7,7 @@ This project was about creating a responsive image gallery with flex panels that
 ### Part 1: First Try (following tutorial)
 ![1st try demo GIF format](<Demo videos/1sttrydemo-ezgif.com-video-to-gif-converter.gif>)
 
-* **`:first-child` and `:last-child` selectors**
+* **`:first-child` and `:last-child` selectors**:
   I learnt how to target only the first and last paragraph elements inside a panel.
 
   ```css
@@ -21,7 +21,7 @@ This project was about creating a responsive image gallery with flex panels that
   }
   ```
 
-* **Multiple transitions in one property**
+* **Multiple transitions in one property**:
   I always used `transition: all ...`, but here I learnt we can set different timings for different properties.
 
   ```css
@@ -32,7 +32,7 @@ This project was about creating a responsive image gallery with flex panels that
     background-image 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
   ```
 
-* **The transitionend event issue**
+* **The transitionend event issue**:
   I used an event listener to trigger text animation after the panel transition. But it caused stuttering in the animations.
 
   ```js
@@ -46,7 +46,7 @@ This project was about creating a responsive image gallery with flex panels that
 
 ### Part 2: Second Try (built on my own)
 ![2nd try demo GIF format](<Demo videos/2ndtrydemo-ezgif.com-optimize.gif>)
-* **Removed transitionend event stutters**
+* **Removed transitionend event stutters**:
   I replaced the `transitionend` listener with delays in CSS transitions for smoother animations and it really made a ton of difference for the animations.
 
   ```css
@@ -69,7 +69,7 @@ This project was about creating a responsive image gallery with flex panels that
   }
   ```
 
-* **Using `children[index]` in JavaScript**
+* **Using `children[index]` in JavaScript**:
   Instead of confusing CSS selectors, I accessed the child elements directly in JS.
 
   ```js
@@ -82,7 +82,7 @@ This project was about creating a responsive image gallery with flex panels that
   }
   ```
 
-* **Learnt `::before` and `::after` selectors**
+* **Learnt `::before` and `::after` selectors**:
   I used them to add blur and dark hover effects to the panels.
 
   ```css
